@@ -1,0 +1,225 @@
+@charset 'utf-8';
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,800);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* outline-style: none;  */
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', GmarketSansMedium, GmarketSansLight, GmarketSansBold, '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;
+    font-size: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: -0.6px;
+}
+
+
+/* 공통영역 */
+.inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+
+/* 헤더 */
+.header {
+    position: relative;
+    display: block;
+}
+
+.header .inner {
+    position: relative;
+    display: block;
+    height: 98px;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+
+    width: 164px;
+    height: 53px;
+
+    font-size: 0;
+    background: url('/images/img_logo.png') no-repeat center;
+}
+
+.gnb {
+    position: relative;
+    display: block;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: block;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+}
+
+.mainmenu {
+    position: relative;
+    display: block;
+    height: 98px;
+    line-height: 98px;
+    text-align: center;
+    padding: 0 18px;
+    font-size: 17px;
+}
+
+.submenu {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%) translateY(10px);
+    display: block;
+    visibility: hidden;
+    min-width: 182px;
+    opacity: 0;
+    transition: all 0.5s;
+
+    background: #fff;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 8%);
+}
+
+.menu>li:hover .submenu {
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+
+.submenu li {
+    position: relative;
+    display: block;
+}
+
+.submenu li a {
+    position: relative;
+    display: block;
+
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    line-height: 46px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+
+
+.member {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: block;
+
+}
+
+.member-list {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.member-list li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+
+.member-list li a {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+
+.member-more {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 45px;
+
+    float: left;
+    background: url('/images/img_allmenu.png') no-repeat center;
+    font-size: 0;
+    border: 0;
+}
+
