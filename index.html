@@ -10,29 +10,53 @@
   <link
     href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
     rel="stylesheet">
-  <!-- 머티리얼즈 -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
-  <!-- Jquery -->
   <link rel="stylesheet" href="js/swiper/swiper.min.css">
   <script src="js/swiper/swiper.min.js"></script>
-  <!-- swiper -->
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
     integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- fontawesome -->
-
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
-
 </head>
 
 <body>
+      <!-- 모달창 -->
+    <div class="modal-wrap">
+      <div class="modal-main">
+        <div class="modal-up">
+          <span class="btn1"></span>
+          <span class="btn2"></span>
+          <span class="btn3"></span>
+        </div>
+        <div class="modal-bottom">
+          <h1>거제청년센터 클론코딩</h1>
+          <p class="modal-desc">
+            이 사이트는 <span class="checkfont">스터디용</span>으로 제작되었으며
+            리소스는 <span class="checkfont">원저작자</span>에게 있습니다.
+            <br />
+            해당 사이트 관련 문제 사항이 있으시면 연락해주시면 삭제하겠습니다.
+          </p>
+
+          <p class="modal-study">
+            1. 화면 이동 애니메이션으로 조금 더 부드럽게 제작하였습니다.<br />
+            2. 메타 태그를 통한 검색엔진 최적화 진행하였습니다.
+          </p>
+
+          <p class="modal-chrome">
+            본 사이트는 <span class="checkfont">Chrome</span> 에 최적화되어
+            있습니다.😊
+          </p>
+          <button class="modal-close">
+            CLOSE
+          </button>
+        </div>
+      </div>
+    </div>
   <!-- 더보기 메뉴 -->
   <div class="more-wrap">
     <div class="more-div">
-      
       <h2>
         <b>거제청년센터 이룸</b>
         전체메뉴      
@@ -108,13 +132,9 @@
     </div>
   </div>
 
-
-  <!-- 모바일 메뉴 -->
-  <!-- 모바일 버튼 -->
   <a href="#" class="mb-bt">
     <span class="line"></span>
   </a>
-  <!-- 모바일 메뉴 내용 -->
   <div class="mb-wrap">
     <div class="mb-wrap-top clearfix">
       <a href="#">로그인</a>
@@ -188,17 +208,12 @@
     </div>
   </div>
 
-  <!-- 모바일 메뉴 가림막 -->
   <div class="mb-dim"></div>
 
   <div class="wrap">
-    <!-- 상단 영역 -->
     <header class="header">
-
       <div class="inner">
-        <a href="#" class="logo">
-        </a>
-
+        <a href="#" class="logo"></a>
         <div class="gnb">
           <ul class="menu">
             <li>
@@ -265,26 +280,17 @@
             </li>
           </ul>
         </div>
-
         <div class="member">
-
           <ul class="member-list clearfix">
             <li><a href="#">로그인</a></li>
             <li><a href="#">회원가입</a></li>
           </ul>
-
           <button class="member-more">더보기</button>
-
         </div>
-
       </div>
-
     </header>
-    <!-- 비주얼 영역 -->
     <section class="visual">
-      <!-- Swiper  -->
       <div class="swiper-container sw-visual">
-        <!-- 슬라이더의 내용 배치 -->
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <a href="#" class="vs-1"></a>
@@ -296,9 +302,7 @@
             <a href="#" class="vs-3"></a>
           </div>
         </div>
-        <!-- 슬라이더 페이지네이션 -->
         <div class="sw-visual-control clearfix">
-          <!-- 차라리 div 하나 만들어서 위치이동하는게 정신건강에 좋음 -->
           <div class="sw-visual-pg"></div>
           <button class="sw-visual-bt">
             <span class="material-icons-outlined">
@@ -308,42 +312,40 @@
         </div>
       </div>
     </section>
-    <!-- 퀵메뉴 영역 -->
     <section class="quick-menu">
       <div class="inner">
         <ul class="quick-menu-list clearfix">
           <li>
             <a href="#">
-              <img src="images/img_icon01.svg" alt="">
+              <img src="images/img_icon01.svg" alt="검색아이콘">
               청년정책검색
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/img_icon02.svg" alt="">
+              <img src="images/img_icon02.svg" alt="정책뉴스아이콘">
               정책뉴스</a>
           </li>
           <li>
             <a href="#">
-              <img src="images/img_icon03.svg" alt="">
+              <img src="images/img_icon03.svg" alt="공간예약아이콘">
               공간예약</a>
           </li>
           <li>
             <a href="#">
-              <img src="images/img_icon04_new.png" alt="">
+              <img src="images/img_icon04_new.png" alt="구인구직아이콘">
               구인 구직등록
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/img_icon05_new.png" alt="">
+              <img src="images/img_icon05_new.png" alt="청춘아이콘">
               청춘다락
             </a>
           </li>
         </ul>
       </div>
     </section>
-    <!-- 커뮤니티 영역-->
     <section class="community">
       <div class="inner clearfix">
         <div class="community-box">
@@ -407,8 +409,6 @@
         </div>
       </div>
     </section>
-    
-    <!-- 갤러리 영역-->
     <section class="gallery">
       <div class="inner clearfix">
         <div class="gallery-left">
@@ -453,11 +453,7 @@
               </a>
             </li>
           </ul>
-
-
-
         </div>
-
         <div class="gallery-right">
           <h3>동영상 갤러리</h3>
           <a href="#" class="gallery-more">전체보기</a>
@@ -470,10 +466,8 @@
         </div>
       </div>
     </section>
-    <!-- 배너 영역-->
     <section class="banner">
       <div class="inner clearfix">
-
         <div class="banner-left">
           <h2>배너모음</h2>
           <div class="banner-control">
@@ -490,9 +484,7 @@
             </button>
           </div>
         </div>
-
         <div class="banner-right">
-
           <div class="swiper-container sw-banner">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><a href="#" class="banner-0"></a></div>
@@ -506,7 +498,6 @@
               <div class="swiper-slide"><a href="#" class="banner-8"></a></div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -518,7 +509,6 @@
           <li><a href="#">이용약관</a></li>
           <li><a href="#">이메일무단수집거부</a></li>
         </ul>
-
         <p>
           <ul class="footer-addr">
             <li>
@@ -532,20 +522,14 @@
             </li>
           </ul>
         </p>
-
         <button class="gotop">
         </button>
       </div>
-
       <hr class="f-hr">
-
       <div class="inner">
         <span class="copy">Copyright © <strong>거제청년센터이룸.</strong> All right reserved.</span>
       </div>
-
     </footer>
   </div>
-
 </body>
-
 </html>
