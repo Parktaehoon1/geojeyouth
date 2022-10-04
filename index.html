@@ -6,12 +6,24 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">  
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="거제청년센터 이룸">
+	<meta name="description" content="거제청년센터 이룸은 거제에 거주하는 청년을 위한 청년정책기반조성 청년일자리 청년활동발굴지원 청년커뮤니티활성화 청년지원사업을 수행하고 있습니다." />
+	<meta name="keywords"  content="경남 거제, 청년, 거제청년센터, 이룸, 거제청년일자리, 거제 청년센터, 청년정책기반조성, 청년활동발굴지원, 청년커뮤니티활성화, 청년지원사업, 거제시, 거제 일자리, 청년일자리" />
+	<link rel="canonical" href="http://www.geojeyouth.com/" />
+	<meta property="og:type" content="website"> 
+	<meta property="og:image" content="http://geojeyouth.com/sns_img.png">
+	<meta property="og:title" content="거제청년센터 이룸"> 
+	<meta property="og:description" content="거제청년센터 이룸은 거제에 거주하는 청년을 위한 청년정책기반조성 청년일자리 청년활동발굴지원 청년커뮤니티활성화 청년지원사업을 수행하고 있습니다.">
+	<meta property="og:url" content="http://www.geojeyouth.com/">
   <title>거제청년센터</title>
   <link
     href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
     rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
+<!-- jQuery UI -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <link rel="stylesheet" href="js/swiper/swiper.min.css">
   <script src="js/swiper/swiper.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
@@ -23,37 +35,41 @@
 
 <body>
       <!-- 모달창 -->
-    <div class="modal-wrap">
-      <div class="modal-main">
-        <div class="modal-up">
-          <span class="btn1"></span>
-          <span class="btn2"></span>
-          <span class="btn3"></span>
-        </div>
-        <div class="modal-bottom">
-          <h1>거제청년센터 클론코딩</h1>
-          <p class="modal-desc">
-            이 사이트는 <span class="checkfont">스터디용</span>으로 제작되었으며
-            리소스는 <span class="checkfont">원저작자</span>에게 있습니다.
-            <br />
-            해당 사이트 관련 문제 사항이 있으시면 연락해주시면 삭제하겠습니다.
-          </p>
+  <!-- 모달창 -->
+  <div class="modal-wrap">
+    <div class="modal-main">
+      <div class="modal-up">
+        <span class="btn1"></span>
+        <span class="btn2"></span>
+        <span class="btn3"></span>
+      </div>
+      <div class="modal-bottom">
+        <h1>거제청년센터 이룸 클론코딩</h1>
+        <p class="modal-desc">
+          이 사이트는 <span class="checkfont">스터디용</span>으로
+          제작되었습니다.
+        </p>
+        <p class="modal-chrome">
+          본 사이트는 <span class="checkfont">Chrome</span> 에 최적화되어
+          있습니다.😊
+        </p>
 
-          <p class="modal-study">
-            1. 화면 이동 애니메이션으로 조금 더 부드럽게 제작하였습니다.<br />
-            2. 메타 태그를 통한 검색엔진 최적화 진행하였습니다.
-          </p>
+        <p class="modal-study">
+          1. 반응형 페이지 추가하였습니다.<br />
+          2. 화면 이동 애니메이션 조금 더 부드럽게 수정하였습니다.<br/>
+          3. jquery로 데이터 연동하는 방법 배웠습니다.(community,gallery부분)
+        </p>
 
-          <p class="modal-chrome">
-            본 사이트는 <span class="checkfont">Chrome</span> 에 최적화되어
-            있습니다.😊
-          </p>
-          <button class="modal-close">
-            CLOSE
-          </button>
-        </div>
+        <button class="modal-close">
+          <!-- <i class="fas fa-times"></i> -->
+          CLOSE
+        </button>
+        <p class="warning">
+          해당 사이트 관련 문제 사항이 있으시면 연락 부탁드립니다.
+        </p>
       </div>
     </div>
+  </div>
   <!-- 더보기 메뉴 -->
   <div class="more-wrap">
     <div class="more-div">
@@ -215,8 +231,8 @@
       <div class="inner">
         <a href="#" class="logo"></a>
         <div class="gnb">
-          <ul class="menu">
-            <li>
+          <ul class="menu header-data">
+            <!-- <li>
               <a href="#" class="mainmenu">청년센터</a>
               <ul class="submenu">
                 <li><a href="#">청년센터소개</a></li>
@@ -277,7 +293,7 @@
               <ul class="submenu">
                 <li><a href="#">소개</a></li>
               </ul>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="member">
@@ -354,23 +370,7 @@
             <a href="#" class="community-more">전체보기</a>
           </div>
           <div class="community-main">
-            <ul class="cummunity-list">
-              <li>
-                <a href="#">6월 문화특강 [모스큐브&멘톨비누 만들기]</a>
-                <span>2022.06.17</span>
-              </li>
-              <li>
-                <a href="#">6월 문화특강 [모스큐브&멘톨비누 만들기]</a>
-                <span>2022.06.17</span>
-              </li>
-              <li>
-                <a href="#">6월 문화특강 [모스큐브&멘톨비누 만들기]</a>
-                <span>2022.06.17</span>
-              </li>
-              <li>
-                <a href="#">6월 문화특강 [모스큐브&멘톨비누 만들기]</a>
-                <span>2022.06.17</span>
-              </li>
+            <ul class="cummunity-list data-info">     
             </ul>
           </div>
         </div>
@@ -380,23 +380,8 @@
             <a href="#" class="community-more">전체보기</a>
           </div>
           <div class="community-main">
-            <ul class="cummunity-list">
-              <li>
-                <a href="#">6월 문화특강 [모스큐브&멘톨비누 만들기]</a>
-                <span>2022.06.17</span>
-              </li>
-              <li>
-                <a href="#">6월 문화특강 [모스큐브&멘톨비누 만들기]</a>
-                <span>2022.06.17</span>
-              </li>
-              <li>
-                <a href="#">6월 문화특강 [모스큐브&멘톨비누 만들기]</a>
-                <span>2022.06.17</span>
-              </li>
-              <li>
-                <a href="#">6월 문화특강 [모스큐브&멘톨비누 만들기]</a>
-                <span>2022.06.17</span>
-              </li>
+            <ul class="cummunity-list data-news">
+         
             </ul>
           </div>
         </div>
@@ -405,7 +390,9 @@
             <h3>센터일정</h3>
             <a href="#" class="community-more">전체보기</a>
           </div>
-          <div class="community-main"></div>
+          <div class="community-main community-main-caledar">
+            <div id="datepicker"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -414,51 +401,14 @@
         <div class="gallery-left">
           <h3>활동 갤러리</h3>
           <a href="#" class="gallery-more">전체보기</a>
-          <ul class="gallery-list clearfix">
-            <li>
-              <a href="#">
-                <span class="gallery-img gallery-1"></span>
-                <p class="gallery-cont">
-                  <span class="gallery-title">
-                    3월 인문학 특강 [우리 삶에 철학이 필요한 이유]
-                  </span>
-                  <span class="gallery-date">
-                    2021-06-04
-                  </span>
-                </p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="gallery-img gallery-2"></span>
-                <p class="gallery-cont">
-                  <span class="gallery-title">
-                    12월 문화특강 주간 ♡ 크리스마스 입욕제 만들기 </span>
-                  <span class="gallery-date">
-                    2021-12-14
-                  </span>
-                </p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="gallery-img gallery-3"></span>
-                <p class="gallery-cont">
-                  <span class="gallery-title">
-                    12월 문화특강 주간 ♡ 플레이팅 도마 만들기 </span>
-                  <span class="gallery-date">
-                    2021-12-14
-                  </span>
-                </p>
-              </a>
-            </li>
+          <ul class="gallery-list gallery-div clearfix">
           </ul>
         </div>
         <div class="gallery-right">
           <h3>동영상 갤러리</h3>
           <a href="#" class="gallery-more">전체보기</a>
           <div class="gallery-video">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/rlJDulzvDlc"
+            <iframe width="100%" height="100%" src="https://geojeyouth.com/upload/bbs/vod/vdata_file_4.mp4"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
