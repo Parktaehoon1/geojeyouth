@@ -292,17 +292,18 @@ $(document).ready(function () {
     let subData = data.subArr; //
     console.log("🚀 ~ file: script.js ~ line 293 ~ subData", subData);
     let temp = `
-            <li>
-              <a href="${data.link}" class="mainmenu">${data.title}</a>
-                <ul class="submenu">
-                  <li><a href="${subData.sublink}">${subData.subtitle}</a></li>
-                  <li><a href="${subData.sublink}">${subData.subtitle}</a></li>
-                  <li><a href="${subData.sublink}">${subData.subtitle}</a></li>
-                  <li><a href="${subData.sublink}">${subData.subtitle}</a></li>
-                  <li><a href="${subData.sublink}">${subData.subtitle}</a></li>
-                </ul>
-              </li>
-              `;
+                <li>
+                  <a href="${data.link}" class="mainmenu">${data.title}</a>
+                    <ul class="submenu">
+                  `;
+    let subTemp = "";
+    for (let j = 0; j < subData.length; j++) {
+      let subObj = subData[j];
+      subTemp += `<li><a href="${subObj.sublink}">${subObj.subtitle}</a></li>`;
+    }
+
+    temp += subTemp;
+    temp += `</ul></li>`;
     headerOutput += temp;
   }
   headerList.html(headerOutput);
